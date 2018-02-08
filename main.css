@@ -1,14 +1,21 @@
 body {
     background-color:#dbdbdb;
+    padding: 0;
+    margin: 0;
 }
-
+.container {
+    box-sizing: border-box;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
 .block {
     background: white;
     vertical-align: top;
     border-radius: 5px;
 }
 
-.left {
+.container .left {
      float: left;
      display: inline-block;
      width: 730px;
@@ -232,6 +239,7 @@ font-size: 9px;
     text-decoration: none;
     color: white;
     font-size: 13px;
+    font-weight: normal ;
     border-radius: 9px;
     background: #ff8833;
     border: none;
@@ -246,5 +254,116 @@ font-size: 9px;
 .space2{
     width: 45px;
     display: inline-block;
+
+}
+.container .beidge{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: inline-block;
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    background: #700f98;
+    transform: translateY(80px);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.beidge:hover{
+    transform: translateY(0px);
+    background: blue;
+    transition:	all	2s	ease;
+}
+.beidge .b1{
+    margin-top: 20px;
+    margin-left: 30px;
+    display: inline-block;
+    font-size: 22px;
+    text-align: center;
+    color: white;
+}
+.beidge .b2{
+    margin-top: 40px;
+    margin-left: 30px;
+    display: inline-block;
+    color: white;
+    font-size: 13px;
+}
+.beidge .b3{
+    margin-top: 5px;
+    margin-left: 15px;
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+}
+@media print{
+    .beidge{
+        height: 40px;
+        background: white;
+        border: 2px solid #700f98;
+        color: black;
+    }
+    .beidge .b1{
+        display: none;
+        }
+    .beidge .b2{
+        margin-top: 15px;
+        display: inline-block;
+        color: black;
+    }
+    .beidge .b3{
+        margin-top: 8px;
+        display: inline-block;
+        color: black;
+    }
+}
+
+@media (max-width: 500px){
+    .left{
+        width: 100%;
+        float: none;
+    }
+    .right{
+        width: 100%;
+        float: none;
+    }
+}
+
+
+button {
+    position: relative;
+    box-sizing: border-box;
+}
+button::after {
+    display: block;
+    content: attr(data-tooltip);
+    position: absolute;
+    top: -22px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 100px;
+    height: 20px;
+    padding: 3px;
+    box-sizing: border-box;
+    background: #700f98;
+    color: white;
+    font-size: 10px;
+    font-weight: normal ;
+    text-decoration: none;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 4px;
+    visibility: hidden;
+    transform: scale(0) ;
+    transform-origin: 50% 100%;
+    transition: all 1s ease;
+
+}
+
+button:hover::after {
+    visibility: visible;
+    transform: scale(1);
+    transform-origin: 0% 0% ;
 
 }
