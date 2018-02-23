@@ -14,14 +14,22 @@ body {
     vertical-align: top;
     border-radius: 5px;
 }
+.space{
+    min-width: 110px;
+    max-width: 110px;
+    width: 110px;
+    display: inline-block;
 
-.container .left {
+}
+
+.container .list-of-items {
      float: left;
      display: inline-block;
      width: 730px;
-     height: 250px;
+     height: 65px;
      margin-top: 90px;
-     margin-left: 120px;
+    margin-left: 120px;
+
 }
 
 .right {
@@ -32,7 +40,8 @@ body {
     margin-top: 90px;
   }
 
-.right1 {
+.right .right1 {
+    margin-top: 20px;
     font-size: 20px;
     vertical-align: 20px;
     border-bottom: #dbdbdb solid 1px;
@@ -40,19 +49,29 @@ body {
     height: 45px;
     }
 
-.right2{
+.right .right2{
     border-bottom: #dbdbdb solid 1px;
     text-indent: 10px;
+    height: 20px;
+    visibility: hidden;
     }
 
-.right3{
+.right .right3{
     font-size: 20px;
     border-bottom: #dbdbdb solid 1px;
+    border-top: #dbdbdb solid 1px;
     text-indent: 10px;
-    height: 45px;
+    line-height: 38px;
+    height: 38px;
+    background: white;
     }
+.right .boughtProducts{
+    height: 60px;
+    background: white;
+    display: block;
+}
 
-.box1{
+.right2 .box1{
         width: 100px;
         vertical-align: middle;
          height: 35px;
@@ -61,12 +80,14 @@ body {
         font-size: 15px;
         margin-left: 5px;
         margin-right: 6px;
+        margin-top: 5px;
        background: #dbdbdb;
         border-radius: 5px;
 
     }
 
-.box2{
+.right2 .box2{
+    margin-top: 5px;
     border-radius: 5px;
     width: 90px;
     display: inline-block;
@@ -79,7 +100,8 @@ body {
     margin-right: 6px;
     }
 
-.box3 {
+.right2 .box3 {
+    margin-top: 5px;
     border-radius: 5px;
     width: 70px;
     vertical-align: middle;
@@ -92,30 +114,45 @@ body {
 
 .left1{
     font-size: 17px;
-    border-bottom: #dbdbdb solid 1px;
     height: 50px;
     text-indent: 10px;
      }
-
-.left2{
+.edit .edit1{
+    display: none;
+}
+.list-of-items .one-item2{
+    text-align: center;
+    margin-top: 10px;
+    height: 50px;
     color: #414141;
     padding: 0 1.5em;
     font-size: 17px;
     border-bottom: #dbdbdb solid 1px;
      }
 
-.left3{
+.list-of-items .one-item3{
+    text-align: center;
+    margin-top: 10px;
+    height: 50px;
     color: #414141;
     padding: 0 1.5em;
     font-size: 17px;
     border-bottom: #dbdbdb solid 1px;
      }
 
-.left4{
+.list-of-items .one-item4{
+    text-align: center;
+    margin-top: 10px;
+    height: 50px;
     color: #414141;
     padding: 0 1.5em;
     font-size: 17px;
      }
+.container .list-of-items .unbought{
+    display: none;
+    background-color:#dbdbdb;
+
+}
 
 .text {
     margin-left: 25px;

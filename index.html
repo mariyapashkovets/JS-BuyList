@@ -7,47 +7,64 @@
     <title>BUY LIST</title>
 </head>
 <body><div class="container">
-<span class="block left">
+<span class="block list-of-items">
     <div class="left1">
 <p>
   <input class="text"  placeholder="Назва товару">
     <button type="button" class="button1"  data-tooltip="Tooltip"><b>Додати</b></button>
 </p>
     </div>
-    <div class="left2"><p>Помідори <button type="button"  class="button2"data-tooltip="Tooltip">➖</button>
-        <button type="button"  class="button4"data-tooltip="Tooltip">1</button>
-        <button type="button" class="button3"data-tooltip="Tooltip">➕</button>
-        <button type="button"  class="button5"data-tooltip="Tooltip">Куплено</button>
-        <button type="button" class="button6"data-tooltip="Tooltip">✕</button>
-</p>
+    <span class="unbought">
+    <div class="one-item2">
+        <span class="title"><span class="space"><span class="title1">Помідори</span></span>
+            <span class="edit">   <input class="edit1" value="Title"></span>
+        <span class="minus"> <button type="button"  class="button2"data-tooltip="Tooltip">➖</button>
+        <span class="quantity"> <button type="button"  class="button4"data-tooltip="Tooltip">1</button>
+         <span class="plus"> <button type="button" class="button3"data-tooltip="Tooltip">➕</button>
+        <span class="bought"> <button type="button"  class="button5"data-tooltip="Tooltip">Куплено</button>
+        <span class="delete"><button type="button" class="button6"data-tooltip="Tooltip">✕</button>
     </div>
-    <div class="left3"><p>Печиво<span class="space1"></span>
-       <button type="button"  class="button2"data-tooltip="Tooltip">➖</button>
-        <button type="button"  class="button4"data-tooltip="Tooltip">1</button>
-        <button type="button" class="button3"data-tooltip="Tooltip">➕</button>
-        <button type="button"  class="button5"data-tooltip="Tooltip">Куплено</button>
-        <button type="button" class="button6"data-tooltip="Tooltip">✕</button>
-    </p></div>
-    <div class="left4"><p>Сир<span class="space2"></span>
-        <button type="button"  class="button2"data-tooltip="Tooltip" >➖</button>
-        <button type="button"  class="button4"data-tooltip="Tooltip">1</button>
-        <button type="button" class="button3"data-tooltip="Tooltip">➕</button>
-        <button type="button"  class="button5"data-tooltip="Tooltip">Куплено</button>
-        <button type="button" class="button6"data-tooltip="Tooltip">✕</button>
-    </p></div>
-</span>
-<span class="block right">
-    <div class="right1"><p><b>Залишилося</b></p></div>
-    <div class="right2"><p>
-        <span class="box1">Помідори
-            <button type="button" class="button7"data-tooltip="Tooltip">1</button></span>
-    <span class="box2">Печиво <button type="button" class="button7"data-tooltip="Tooltip">1</button></span>
-    <span class="box3">Сир<button type="button" class="button7"data-tooltip="Tooltip">1</button></span>
-    </p>
-    </div>
-    <div class="right3"><p><b>Куплено</b></p></div>
-</span>
+    <div class="one-item3">Печиво<span class="space1"></span>
 
+       <span class="minus"><button type="button"  class="button2"data-tooltip="Tooltip">➖</button></span>
+        <span class="quantity"> <button type="button"  class="button4"data-tooltip="Tooltip">1</button></span>
+        <span class="plus"><button type="button" class="button3"data-tooltip="Tooltip">➕</button></span>
+        <span class="bought"> <button type="button"  class="button5"data-tooltip="Tooltip">Куплено</button></span>
+        <span class="delete"> <button type="button" class="button6"data-tooltip="Tooltip">✕</button></span>
+    </div>
+    <div class="one-item4">Сир<span class="space2"></span>
+        <span class="minus"><button type="button"  class="button2"data-tooltip="Tooltip">➖</button></span>
+        <span class="quantity"> <button type="button"  class="button4"data-tooltip="Tooltip">1</button></span>
+        <span class="plus"><button type="button" class="button3"data-tooltip="Tooltip">➕</button></span>
+        <span class="bought"> <button type="button"  class="button5"data-tooltip="Tooltip">Куплено</button></span>
+        <span class="delete"> <button type="button" class="button6"data-tooltip="Tooltip">✕</button></span>
+    </div>
+</span>
+    </span>
+<span class="block right">
+
+    <div class="right1"><b>Залишилося</b></div>
+
+ <div class="unboughtProducts"></div>
+
+    <div class="right2">
+
+        <span class="box1">
+            <span class="title">Помідори</span>
+            <button type="button" class="button7"data-tooltip="Tooltip"><span class="quantity">1</span></button>
+
+            <span class="box2">
+         <span class="title1"><span class="title">Печиво</span>
+             <span class="quantity1"> <button type="button" class="button7"data-tooltip="Tooltip">1</button>
+        </span>
+            <span class="box3">
+                <span class="title1"><span class="title">Сир</span>
+                <span class="quantity1"><button type="button" class="button7"data-tooltip="Tooltip">1</button></span>
+            </span>
+    </div>
+    <div class="right3"><b>Куплено</b></div>
+    <div class="boughtProducts"></div>
+</span>
     <div class="beidge">
         <div class="b1">Buy List</div>
 
@@ -56,9 +73,10 @@
         <br>
         <div class="b3">
             Mariya Pashkovets</div>
-    </div>
-
 </div>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
+<script type="text/javascript" src="main.js"> </script>
 
 </body>
 </html>
